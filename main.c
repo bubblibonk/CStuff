@@ -1,9 +1,6 @@
 #include <stdio.h>
 int main(int argc,char*argv[]){
-
-	int a;
-	
-
+	int a;	
 	for(a=10;a<20;a++){
 		printf("%d \n",a);
 	}
