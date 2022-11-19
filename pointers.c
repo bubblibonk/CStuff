@@ -11,5 +11,6 @@ int main (int argc, char *argv[])
   for (i=0;i<count;i++){
     printf("%d : %p  \n",pAges[i],pAges+i);
   }
+  printf("wee");
   return 0;
 }
