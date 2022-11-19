@@ -9,7 +9,7 @@ int main (int argc, char *argv[])
   int i =0;
   int count = sizeof(ages) / sizeof(int);
   for (i=0;i<count;i++){
-    printf("%d : %p \n",pAges[i],pAges);
+    printf("%d : %p  \n",pAges[i],pAges+i);
   }
   return 0;
 }
