@@ -1,4 +1,7 @@
-#include<stdio.h>
+#include<stdio.h> 
+#include<string.h>
+
+
 #include<string.h>
 
 struct Player{
@@ -17,7 +20,18 @@ int main (int argc, char *argv[])
 
   printf("%d,%s \n",Player2.score,Player2.name);
   
+  //pointers
 
+  struct student{
+    int age;
+    char name[25];
+  };
+  struct student anil={30,"Anil"};
+  struct student *ptr;
+
+  ptr = &anil;
+  (*ptr).age = 20;
+  printf("%s %d \n",anil.name,anil.age);
 
   return 0;
 }
