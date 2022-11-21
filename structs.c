@@ -31,7 +31,7 @@ int main (int argc, char *argv[])
 
   ptr = &anil;
   (*ptr).age = 20;
-  printf("%s %d \n",anil.name,anil.age);
+  printf("%s %d %p\n",anil.name,anil.age,&anil);
 
   return 0;
 }
