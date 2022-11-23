@@ -11,6 +11,17 @@ int main (int argc, char *argv[])
   for (i=0;i<count;i++){
     printf("%d : %p  \n",pAges[i],pAges+i);
     printf("wee\n");
+    
+  }
+  int *ags = ages;
+  printf("%p \n",ags);
+  char *names[]={
+    "Alan","Frank","lisa"
+  };
+  count=3;
+  char **nams = names;
+  for(i=0;i<count;i++){
+    printf("%s \n",*(nams+i));
   }
 
   return 0;
