@@ -22,7 +22,13 @@ int main (int argc, char *argv[])
   char **nams = names;
   for(i=0;i<count;i++){
     printf("%s \n",*(nams+i));
+     
   }
+  int height = 100;
+  int *cur_height = &height;
+  int *cur_lol = cur_height;
+  printf(" %d :height address is %p \n",*(cur_lol),cur_height);
+
 
   return 0;
 }
