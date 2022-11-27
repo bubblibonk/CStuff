@@ -28,7 +28,6 @@ int main (int argc, char *argv[])
   int *cur_height = &height;
   int *cur_lol = cur_height;
   printf(" %d :height address is %p \n",*(cur_lol),cur_height);
-
-
+  
   return 0;
 }
