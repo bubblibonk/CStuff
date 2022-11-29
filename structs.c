@@ -12,7 +12,17 @@ void fre(struct Person *who){
   assert(who!=NULL);
   free(who->name);
 }
-struct Person *Person_create(char *name,int age,int height,int wheight);
+struct Person *Person_create(char *name,int age,int height,int wheight){
+
+  struct Person *who = malloc(sizeof(struct Person));
+  assert(who!=NULL);  
+  who->name = strdup(name);
+  who->age = age;
+  who->height = height;
+  who->wheight = wheight;
+  return who;
+
+};
 
 int main (int argc, char *argv[])
 {
